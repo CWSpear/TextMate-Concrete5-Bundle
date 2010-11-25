@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php echo DIR_REL; ?&gt;/</string>
+	<key>name</key>
+	<string>Relative Directory</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>reldir</string>
+	<key>uuid</key>
+	<string>58FD4590-AAF0-4ECC-9A23-1DEE4C52F799</string>
+</dict>
+</plist>

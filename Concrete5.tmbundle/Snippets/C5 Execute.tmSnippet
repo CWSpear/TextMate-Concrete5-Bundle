@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php defined('C5_EXECUTE') or die(_("Access Denied.")); ?&gt;</string>
+	<key>name</key>
+	<string>C5 Execute</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>c5exe</string>
+	<key>uuid</key>
+	<string>5C16F8B1-B634-4922-9A2F-5C36F9D9EC55</string>
+</dict>
+</plist>

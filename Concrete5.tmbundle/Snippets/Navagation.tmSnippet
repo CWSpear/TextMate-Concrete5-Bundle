@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php
+\$${1:bt_nav} = BlockType::getByHandle('autonav'); 
+\$$1-&gt;controller-&gt;displayPages = '${2:curret/top/above/below/second_level/third/level}'; 
+\$$1-&gt;controller-&gt;orderBy = '${3:display_asc/display_desc}';                     
+\$$1-&gt;controller-&gt;displaySubPages = '${4:all/relevant/relevant_breadcrumb}';
+\$$1-&gt;controller-&gt;displaySubPageLevels = '${5:all/enough/enough_plus1}';
+
+\$$1-&gt;render('${6:view}');    
+?&gt;
+$0</string>
+	<key>name</key>
+	<string>Navagation</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>nav</string>
+	<key>uuid</key>
+	<string>332355A0-50B0-459C-A4BE-B0606B9C80E8</string>
+</dict>
+</plist>

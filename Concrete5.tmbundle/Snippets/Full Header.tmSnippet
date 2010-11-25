@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;head&gt;
+&lt;?php Loader::element('header_required'); ?&gt;
+${1:&lt;link rel="stylesheet" href="&lt;?php echo $this-&gt;getThemePath()?&gt;/${2:css/style}.css" type="text/css" media="screen" /&gt;}
+${3:&lt;script type="text/javascript" src="&lt;?php echo $this-&gt;getThemePath()?&gt;/${4:js/default}.js"&gt;&lt;/script&gt;}
+
+&lt;/head&gt;
+</string>
+	<key>name</key>
+	<string>Full Header</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>header</string>
+	<key>uuid</key>
+	<string>2DA4B2FC-381A-4F9C-BF3B-91CC513C32C2</string>
+</dict>
+</plist>

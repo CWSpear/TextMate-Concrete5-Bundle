@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php \$${1:pageObj} = Page::getCurrentPage(); \$${2:curPage} = \$$1-&gt;getHandleName(); ?&gt;
+</string>
+	<key>name</key>
+	<string>Page Handle</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>page</string>
+	<key>uuid</key>
+	<string>5A68F147-3AFE-4277-B5F6-30EC845B7FF7</string>
+</dict>
+</plist>

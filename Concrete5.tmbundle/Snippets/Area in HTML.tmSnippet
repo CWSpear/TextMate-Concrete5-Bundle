@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php \$${1:content} = new Area("${2:Content}"); \$$1-&gt;display(\$${3:c}); ?&gt;
+$0</string>
+	<key>name</key>
+	<string>Area</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>area</string>
+	<key>uuid</key>
+	<string>3E507B55-5051-44E1-83D6-3C197C191BC9</string>
+</dict>
+</plist>
