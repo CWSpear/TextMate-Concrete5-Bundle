@@ -1,0 +1,45 @@
+name : tab trigger : scope
+	default example
+
+Area : area : text.html
+	<?php $content = new Area("Content"); $content->display($c); ?>
+Area (PHP) : area : source.php
+	$content = new Area("Content"); $content->display($c); // inside <?php ... ?> tags
+C5 Execute : c5exe : text.html 
+	<?php defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
+Page Name : page : text.html 
+	<?php $pageObj = Page::getCurrentPage(); $curPage = $pageObj->getCollectionName(); ?>
+Page Handle : page : text.html 
+	<?php $pageObj = Page::getCurrentPage(); $curPage = $pageObj->getHandleName(); ?>
+Load C5 Header : load : text.html
+	<?php Loader::element("header_required"); ?>
+Load C5 Footer : load : text.html
+	<?php Loader::element("footer_required"); ?>
+Navagation : nav : text.html
+	<?php
+	$bt_nav = BlockType::getByHandle('autonav'); 
+	$bt_nav->controller->displayPages = 'curret/top/above/below/second_level/third/level'; 
+	$bt_nav->controller->orderBy = 'display_asc/display_desc';                     
+	$bt_nav->controller->displaySubPages = 'all/relevant/relevant_breadcrumb';
+	$bt_nav->controller->displaySubPageLevels = 'all/enough/enough_plus1';
+
+	$bt_nav->render('view');    
+	?>
+Stylesheet : import : text.html
+	<link rel="stylesheet" href="<?php $this->getThemePath(); ?>/css/master.css" type="text/css">  
+Javascript : import : text.html
+	<script type="text/javascript" src="<?php echo $this->getThemePath(); ?>/js/default.js"></script>
+Relative Directory : reldir : text.html
+	<?php echo DIR_REL; ?>/
+Image : img : text.html
+	<img src="<?=$this->getThemePath()?>/images/photo.png">
+User : user : text.html
+	<?php $u = new User(); $userName = $u->getUserName(); ?>
+Full Header : header : text.html
+ 	<head>
+	<?php Loader::element('header_required'); ?>
+	<link rel="stylesheet" href="<?php echo ->getThemePath()?>/css/style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="<?php echo ->getThemePath()?>/js/default.js"></script>
+
+	</head>
+	
